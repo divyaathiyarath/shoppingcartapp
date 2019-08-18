@@ -232,6 +232,6 @@ app.get('/home&kitchensingle/:id',(req,res)=>{
     const x=req.params.id;
     res.render('home&kitchensingle',{home:home[x],title:"Home&Kitchen"});
 });
-app.listen(3000,()=>{
+app.listen(process.env.PORT || 3000,()=>{
     console.log("Server is running");
 });
